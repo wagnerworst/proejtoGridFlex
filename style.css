@@ -2,8 +2,8 @@ body{
     display: grid;
     background-color: #C3CFD9;
     gap: 2px;
-    grid-template-columns: 19vw 79vw;
-    grid-template-rows: 19vh 60vh 19vh;
+    grid-template-columns: 20vw 79vw;
+    grid-template-rows: 19vh 60vh 18vh;
 }
 
 body > *{
@@ -15,22 +15,26 @@ header{
 }
 main{
     display: flex;
+    flex-direction: column;
     background-color: #EDB5BD;
     grid-column-start: 2;
     grid-column-end: 3;
 }
 main > *{
-    background-color: #a3dfd9;
-    height: 25vh;
+    display: flex;
+    background-color: #D5E7F7;
+    height: 100vh;
+    width: 78.5vw;
+    margin: 5px;
+}
+article{
+    margin:10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #A3DFD9;
     width: 50vw;
-    border: 4px solid #D5E7F7;
 }
-.primeira{
-    align-self: flex-start;
-}
-.segunda{
-    align-self: flex-end;
-}
+
 footer{
     grid-column-start: 1;
     grid-column-end: 3;
